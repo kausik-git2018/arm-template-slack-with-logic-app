@@ -1,0 +1,48 @@
+{
+    "headers": {
+        "Connection": "Keep-Alive",
+        "Expect": "100-continue",
+        "Host": "prod-71.eastus.logic.azure.com",
+        "User-Agent": "IcMBroadcaster/1.0",
+        "X-CorrelationContext": "RkkKACgAAAACAAAAEABZUpkvb2uXTKS1mlx9uXIlAQAQAElyB0l46zRNh/HHxtVjLhI=",
+        "Content-Length": "1100",
+        "Content-Type": "application/json; charset=utf-8"
+    },
+    "body": {
+        "schemaId": "AzureMonitorMetricAlert",
+        "data": {
+            "version": "2.0",
+            "properties": null,
+            "status": "Activated",
+            "context": {
+                "timestamp": "2021-08-14T10:50:18.9640819Z",
+                "id": "/subscriptions/39a470b5-91a0-4fc0-bfea-c60a745c8d53/resourceGroups/alert_RG/providers/microsoft.insights/metricAlerts/alertrule",
+                "name": "alertrule",
+                "description": "",
+                "conditionType": "SingleResourceMultipleMetricCriteria",
+                "severity": "2",
+                "condition": {
+                    "windowSize": "PT1M",
+                    "allOf": [
+                        {
+                            "metricName": "CpuTime",
+                            "metricNamespace": "Microsoft.Web/sites",
+                            "operator": "GreaterThan",
+                            "threshold": "0.01",
+                            "timeAggregation": "Total",
+                            "dimensions": [],
+                            "metricValue": 0.015,
+                            "webTestName": null
+                        }
+                    ]
+                },
+                "subscriptionId": "39a470b5-91a0-4fc0-bfea-c60a745c8d53",
+                "resourceGroupName": "alert_RG",
+                "resourceName": "alertwebapp10045",
+                "resourceType": "Microsoft.Web/sites",
+                "resourceId": "/subscriptions/39a470b5-91a0-4fc0-bfea-c60a745c8d53/resourceGroups/alert_RG/providers/Microsoft.Web/sites/alertwebapp10045",
+                "portalLink": "https://portal.azure.com/#resource/subscriptions/39a470b5-91a0-4fc0-bfea-c60a745c8d53/resourceGroups/alert_RG/providers/Microsoft.Web/sites/alertwebapp10045"
+            }
+        }
+    }
+}
